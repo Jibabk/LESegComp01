@@ -1,7 +1,8 @@
 # LESegComp01
 Criptografia e descriptografia de Deslocamento e Transposição
 
-## Como gerar a cifra de Deslocamento
+## Deslocamento
+### Como gerar a cifra de Deslocamento
 1. Coloque a mensagem desejada no arquivo `mensagem.txt`.
 2. Rode o arquivo `cifraCeaser.py` no path `./Deslocamento` :
     ```bash
@@ -9,7 +10,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
     ```
 3. Escolha uma chave numérica para o deslocamento durante a execução do script.
 
-## Como descriptografar a cifra de Deslocamento por força bruta
+### Como descriptografar a cifra de Deslocamento por força bruta
 1. Utilize a mesma chave numérica usada para criptografar.
 2. Rode o arquivo `forceDescripCeaser.py` no path `./Deslocamento`:
     ```bash
@@ -17,7 +18,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
     ```
 3. A mensagem descriptografada será exibida.
 
-## Como descriptografar a cifra de Deslocamento por análise de distribuição
+### Como descriptografar a cifra de Deslocamento por análise de distribuição
 1. Utilize a mesma chave numérica usada para criptografar.
 2. Rode o arquivo `descripCeaser.py` no path `./Deslocamento`:
     ```bash
@@ -25,7 +26,8 @@ Criptografia e descriptografia de Deslocamento e Transposição
     ```
 3. A mensagem descriptografada será exibida.
 
-## Como gerar a cifra de Transposição
+## Transposição
+### Como gerar a cifra de Transposição
 1. Coloque a mensagem desejada no arquivo `mensagem.txt`.
 2. Rode o arquivo `cifraTranspo.py` no path `./Transposicao`:
     ```bash
@@ -33,7 +35,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
     ```
 3. Escolha uma palavra-chave para determinar a ordem das colunas durante a execução do script.
 
-## Como descriptografar a cifra de Transposição por força bruta 
+### Como descriptografar a cifra de Transposição por força bruta 
 (pode demorar alguns segundos)
 1. Utilize a mesma palavra-chave usada para criptografar.
 2. Rode o arquivo `forceDescripTranspo.py` no path `./Transposicao`:
@@ -42,7 +44,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
     ```
 3. A mensagem descriptografada será exibida.
 
-## Como descriptografar a cifra de Transposição por análise de distribuição
+### Como descriptografar a cifra de Transposição por análise de distribuição
 1. Utilize a mesma palavra-chave usada para criptografar.
 2. Rode o arquivo `descripTranspo.py` no path `./Transposicao`:
     ```bash
