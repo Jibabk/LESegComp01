@@ -15,6 +15,7 @@ def verify(resposta):
             continue                    
     return chance
 
+#Pega os dividendos menores que 26 de um número
 def dividendos(n):
     retorno = []
     for i in range(1, n):
@@ -24,6 +25,7 @@ def dividendos(n):
             retorno.append(i)
     return retorno
 
+#Compara duas colunas e retorna a probabilidade de comporem uma palavra
 def comparaStrings(base, adicional):
     chance = 0
     for i in range(len(base)):
@@ -46,15 +48,20 @@ for i in range(len(digrafos)):
 #define alfabeto e frequencia das letras
 alfabeto = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
+#separa a cifra em uma lista de caracteres
 cifra = []
 for char in cypher:
     cifra.append(char.upper())
 
-
+#pega os divisores do tamanho da cifra
 end = []
 order = defaultdict(list)
 divisores = dividendos(len(cifra))
+
+# para cada divisor se obtem o resultado mais provável
 for div in divisores:
+
+    #separa a cifra em uma quantidade de colunas igual ao divisor
     order.clear()
     for i in range(len(cifra)):
         order[(i//(len(cifra)//div))].append(cifra[i])
@@ -63,10 +70,13 @@ for div in divisores:
     final.append(order[0])
 
     order.pop(0)
+
+    #para cada coluna é verificado qual é a coluna mais provável de ser sua vizinha até que seja identificado a posição de cada coluna
     while True:
         if not order:
             break
         maior = 0
+        #compara cada coluna
         for key in order:
             direita = comparaStrings(final[-1], order[key])
             esquerda = comparaStrings(order[key], final[0])
@@ -76,25 +86,28 @@ for div in divisores:
             if maior < esquerda:
                 tuple = (0, key)
                 maior = esquerda
+        #Seleciona coluna e remove do pool de colunas ainda não utilizadas
         if tuple[0] == 0:
             final.insert(0, order[tuple[1]])
             order.pop(tuple[1])
         else:
             final.append(order[tuple[1]])
             order.pop(tuple[1])
+    #monta a resposta final e adciona ela a uma lista contendo a resposta mais provavel para cada divisor
     resp = ""
     for i in range(len(final[0])):
         for j in range(len(final)):
             resp += (final[j][i])
     end.append(resp)
 
-
+#compara os resultados de cada tamanho de divisor e escolhe o maior
 maior = 0
 for tentativa in end:
     if verify(tentativa) > maior:
         maior = verify(tentativa)
         resposta = tentativa
-    
+
+
 print(resposta)
 
     
