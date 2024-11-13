@@ -6,7 +6,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 1. Coloque a mensagem desejada no arquivo `mensagem.txt`.
 2. Rode o arquivo `cifraCeaser.py` no path `./Deslocamento` :
     ```bash
-    python cifraCeaser.py
+    python3 cifraCeaser.py
     ```
 3. Escolha uma chave numérica para o deslocamento durante a execução do script.
 4. A mensagem criptografada será salva em `cypher.txt`.
@@ -15,7 +15,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 1. Utilize a mesma chave numérica usada para criptografar.
 2. Rode o arquivo `forceDescripCeaser.py` no path `./Deslocamento`:
     ```bash
-    python forceDescripCeaser.py
+    python3 forceDescripCeaser.py
     ```
 3. A mensagem descriptografada será exibida.
 
@@ -23,7 +23,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 1. Utilize a mesma chave numérica usada para criptografar.
 2. Rode o arquivo `descripCeaser.py` no path `./Deslocamento`:
     ```bash
-    python descripCeaser.py
+    python3 descripCeaser.py
     ```
 3. A mensagem descriptografada será exibida.
 
@@ -32,7 +32,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 1. Coloque a mensagem desejada no arquivo `mensagem.txt`.
 2. Rode o arquivo `cifraTranspo.py` no path `./Transposicao`:
     ```bash
-    python cifraTranspo.py
+    python3 cifraTranspo.py
     ```
 3. Escolha uma palavra-chave para determinar a ordem das colunas durante a execução do script.
 4. A mensagem criptografada será salva em `cypher.txt`.
@@ -42,7 +42,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 1. Utilize a mesma palavra-chave usada para criptografar.
 2. Rode o arquivo `forceDescripTranspo.py` no path `./Transposicao`:
     ```bash
-    python forceDescripTranspo.py
+    python3 forceDescripTranspo.py
     ```
 3. A mensagem descriptografada será exibida.
 
@@ -50,6 +50,6 @@ Criptografia e descriptografia de Deslocamento e Transposição
 1. Utilize a mesma palavra-chave usada para criptografar.
 2. Rode o arquivo `descripTranspo.py` no path `./Transposicao`:
     ```bash
-    python descripTranspo.py
+    python3 descripTranspo.py
     ```
 3. A mensagem descriptografada será exibida.
