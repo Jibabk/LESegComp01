@@ -3,7 +3,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 
 ## Como gerar a cifra de Deslocamento
 1. Coloque a mensagem desejada no arquivo `mensagem.txt`.
-2. Rode o arquivo `cifraCeaser.py`:
+2. Rode o arquivo `cifraCeaser.py` no path `./Deslocamento` :
     ```bash
     python cifraCeaser.py
     ```
@@ -11,7 +11,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 
 ## Como descriptografar a cifra de Deslocamento por força bruta
 1. Utilize a mesma chave numérica usada para criptografar.
-2. Rode o arquivo `forceDescripCeaser.py`:
+2. Rode o arquivo `forceDescripCeaser.py` no path `./Deslocamento`:
     ```bash
     python forceDescripCeaser.py
     ```
@@ -19,7 +19,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 
 ## Como descriptografar a cifra de Deslocamento por análise de distribuição
 1. Utilize a mesma chave numérica usada para criptografar.
-2. Rode o arquivo `descripCeaser.py`:
+2. Rode o arquivo `descripCeaser.py` no path `./Deslocamento`:
     ```bash
     python descripCeaser.py
     ```
@@ -27,15 +27,16 @@ Criptografia e descriptografia de Deslocamento e Transposição
 
 ## Como gerar a cifra de Transposição
 1. Coloque a mensagem desejada no arquivo `mensagem.txt`.
-2. Rode o arquivo `cifraTranspo.py`:
+2. Rode o arquivo `cifraTranspo.py` no path `./Transposicao`:
     ```bash
     python cifraTranspo.py
     ```
 3. Escolha uma palavra-chave para determinar a ordem das colunas durante a execução do script.
 
-## Como descriptografar a cifra de Transposição por força bruta(pode demorar alguns segundos)
+## Como descriptografar a cifra de Transposição por força bruta 
+(pode demorar alguns segundos)
 1. Utilize a mesma palavra-chave usada para criptografar.
-2. Rode o arquivo `forceDescripTranspo.py`:
+2. Rode o arquivo `forceDescripTranspo.py` no path `./Transposicao`:
     ```bash
     python forceDescripTranspo.py
     ```
@@ -43,7 +44,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
 
 ## Como descriptografar a cifra de Transposição por análise de distribuição
 1. Utilize a mesma palavra-chave usada para criptografar.
-2. Rode o arquivo `descripTranspo.py`:
+2. Rode o arquivo `descripTranspo.py` no path `./Transposicao`:
     ```bash
     python descripTranspo.py
     ```
