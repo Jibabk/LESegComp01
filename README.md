@@ -9,6 +9,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
     python cifraCeaser.py
     ```
 3. Escolha uma chave numérica para o deslocamento durante a execução do script.
+4. A mensagem criptografada será salva em `cypher.txt`.
 
 ### Como descriptografar a cifra de Deslocamento por força bruta
 1. Utilize a mesma chave numérica usada para criptografar.
@@ -34,6 +35,7 @@ Criptografia e descriptografia de Deslocamento e Transposição
     python cifraTranspo.py
     ```
 3. Escolha uma palavra-chave para determinar a ordem das colunas durante a execução do script.
+4. A mensagem criptografada será salva em `cypher.txt`.
 
 ### Como descriptografar a cifra de Transposição por força bruta 
 (pode demorar alguns segundos)
